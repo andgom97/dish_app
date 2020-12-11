@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Dish</string>
-    <string name="dish_name">(Nombre receta)</string>
+    <string name="dish_name">Nombre receta</string>
+    <string name="dish_name_hint">Introduzca el nombre de la receta</string>
     <string name="dish_time">-> Comida/Cena:</string>
     <string name="dish_time_icon_desc"> Icono que indica si es una comida de mediodía o cena</string>
     <string name="dish_diet">-> Dieta:</string>
@@ -8,5 +9,12 @@
     <string name="ingredients">-> Ingredientes:</string>
     <string name="delete">Borrar</string>
     <string name="edit">Editar</string>
+    <string name="save">Guardar</string>
+    <string name="lunch">Comida</string>
+    <string name="dinner">Cena</string>
+    <string name="carnivorous">Carnivoro</string>
+    <string name="vegetarian_peach">Pescetariano</string>
+    <string name="vegetarian">Vegetariano</string>
+    <string name="vegan">Vegano</string>
 
 </resources>
