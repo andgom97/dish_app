@@ -22,11 +22,11 @@
 
     <TextView
         android:id="@+id/moment"
-        android:layout_width="134dp"
-        android:layout_height="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/dish_time"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.235"
@@ -42,10 +42,10 @@
         android:contentDescription="@string/dish_time_icon_desc"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toEndOf="@+id/moment"
         app:layout_constraintTop_toBottomOf="@+id/dish_name"
-        app:layout_constraintVertical_bias="0.001"
+        app:layout_constraintVertical_bias="0.015"
         app:srcCompat="@android:drawable/btn_dialog" />
 
     <TextView
@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:text="@string/dish_diet"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/diet_icon"
         app:layout_constraintHorizontal_bias="0.294"
@@ -84,10 +84,10 @@
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintHorizontal_bias="0.233"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/diet"
-        app:layout_constraintVertical_bias="0.063" />
+        app:layout_constraintVertical_bias="0.054" />
 
     <Button
         android:id="@+id/delete_button"
@@ -100,14 +100,13 @@
         app:layout_constraintHorizontal_bias="0.947"
         app:layout_constraintStart_toEndOf="@+id/edit_button"
         app:layout_constraintTop_toBottomOf="@+id/diet_icon"
-        app:layout_constraintVertical_bias="0.822" />
+        app:layout_constraintVertical_bias="0.845" />
 
     <Button
         android:id="@+id/edit_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/edit"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.276"
@@ -120,12 +119,12 @@
         android:layout_width="235dp"
         android:layout_height="248dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/delete_button"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ingredients"
-        app:layout_constraintVertical_bias="0.166" />
+        app:layout_constraintVertical_bias="0.092" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
