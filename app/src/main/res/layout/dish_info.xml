@@ -1,24 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/dish_name"
-        android:layout_width="350dp"
-        android:layout_height="59dp"
-        android:text="@string/dish_name"
-        android:textColor="@color/black"
-        android:textSize="28sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toEndOf="@+id/edit_button"
+        app:layout_constraintTop_toBottomOf="@+id/diet_icon"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <Button
+        android:id="@+id/edit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.136" />
+        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toBottomOf="@+id/diet"
+        app:layout_constraintVertical_bias="0.384" />
+
+    <ImageView
+        android:id="@+id/day_night_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/dish_time_icon_desc"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toEndOf="@+id/moment"
+        app:layout_constraintTop_toBottomOf="@+id/dish_name"
+        app:layout_constraintVertical_bias="0.05"
+        app:srcCompat="@android:drawable/btn_dialog" />
+
+    <ImageView
+        android:id="@+id/diet_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="@string/dish_diet_icon_desc"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toEndOf="@+id/diet"
+        app:layout_constraintTop_toBottomOf="@+id/day_night_icon"
+        app:layout_constraintVertical_bias="0.035"
+        app:srcCompat="@android:drawable/btn_dialog" />
 
     <TextView
         android:id="@+id/moment"
@@ -26,27 +62,27 @@
         android:layout_height="wrap_content"
         android:text="@string/dish_time"
         android:textColor="@color/black"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.235"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
         app:layout_constraintTop_toBottomOf="@+id/dish_name"
-        app:layout_constraintVertical_bias="0.037" />
+        app:layout_constraintVertical_bias="0.074" />
 
-    <ImageView
-        android:id="@+id/day_night_icon"
-        android:layout_width="55dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="8dp"
-        android:contentDescription="@string/dish_time_icon_desc"
+    <TextView
+        android:id="@+id/dish_name"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="@string/dish_name"
+        android:textColor="@color/black"
+        android:textSize="23sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toEndOf="@+id/moment"
-        app:layout_constraintTop_toBottomOf="@+id/dish_name"
-        app:layout_constraintVertical_bias="0.015"
-        app:srcCompat="@android:drawable/btn_dialog" />
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toTopOf="@+id/guideline9"
+        app:layout_constraintVertical_bias="0.228" />
 
     <TextView
         android:id="@+id/diet"
@@ -54,77 +90,41 @@
         android:layout_height="wrap_content"
         android:text="@string/dish_diet"
         android:textColor="@color/black"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/diet_icon"
-        app:layout_constraintHorizontal_bias="0.294"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
         app:layout_constraintTop_toBottomOf="@+id/moment"
-        app:layout_constraintVertical_bias="0.06" />
+        app:layout_constraintVertical_bias="0.052" />
 
-    <ImageView
-        android:id="@+id/diet_icon"
-        android:layout_width="55dp"
-        android:layout_height="47dp"
-        android:contentDescription="@string/dish_diet_icon_desc"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/day_night_icon"
-        app:layout_constraintVertical_bias="0.016"
-        app:srcCompat="@android:drawable/btn_dialog" />
-
-    <TextView
-        android:id="@+id/ingredients"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/ingredients"
-        android:textColor="@color/black"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.233"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/diet"
-        app:layout_constraintVertical_bias="0.054" />
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="395dp" />
 
-    <Button
-        android:id="@+id/delete_button"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="84dp"
-        android:text="@string/delete"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.947"
-        app:layout_constraintStart_toEndOf="@+id/edit_button"
-        app:layout_constraintTop_toBottomOf="@+id/diet_icon"
-        app:layout_constraintVertical_bias="0.845" />
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
 
-    <Button
-        android:id="@+id/edit_button"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/edit"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.276"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerView"
-        app:layout_constraintVertical_bias="0.291" />
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="715dp" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="235dp"
-        android:layout_height="248dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ingredients"
-        app:layout_constraintVertical_bias="0.092" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="16dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
