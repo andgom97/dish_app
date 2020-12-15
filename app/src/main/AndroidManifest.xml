@@ -8,14 +8,15 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DishApp">
-        <activity android:name=".DishCreation">
+        android:theme="@style/Theme.DishApp.NoActionBar">
+        <activity android:name=".DishList">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".DishCreation"></activity>
+        <activity android:name=".DishInfo"></activity>
     </application>
 
 </manifest>
